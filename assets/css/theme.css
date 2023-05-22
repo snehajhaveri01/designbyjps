@@ -1,5 +1,4 @@
 
-
 * { box-sizing: border-box; }
 
 html, body {
@@ -128,6 +127,9 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
+
+/* Secondary font
+================== */
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,
 #ball,
 .tt-main-menu,
@@ -214,6 +216,7 @@ body.tt-transition .ptr-prel-content {
 
 /* ----------------------------------------------------------------------------------------- *
  * Page boxed layout
+ * Note: Class "boxed" in <body> tag is connected with class "tt-wrap" in several places!
 /* ----------------------------------------------------------------------------------------- */
 
 body.tt-boxed .tt-wrap {
@@ -7769,23 +7772,10 @@ video.tt-bg-video {
 	height: calc(100% + 20rem);
 	z-index: -1;
 	pointer-events: none;
-	background-image: url(../img/bg-noise.png);
 	background-position: 50%;
-	animation: BgNoise 1s steps(2) infinite;
+	background-repeat: no-repeat;
 }
-@keyframes BgNoise {
-	0% { transform: translate3d(0, 9rem, 0) }
-	10% { transform: translate3d(-1rem, -4rem, 0) }
-	20% { transform: translate3d(-8rem, 2rem, 0) }
-	30% { transform: translate3d(9rem, -9rem, 0) }
-	40% { transform: translate3d(-2rem, 7rem, 0) }
-	50% { transform: translate3d(-9rem, -4rem, 0) }
-	60% { transform: translate3d(2rem, 6rem, 0) }
-	70% { transform: translate3d(7rem, -8rem, 0) }
-	80% { transform: translate3d(-9rem, 1rem, 0) }
-	90% { transform: translate3d(6rem, -5rem, 0) }
-	to { transform: translate3d(-7rem, 0, 0) }
-}
+
 
 
 /* ------------------------------------------------------------- *
