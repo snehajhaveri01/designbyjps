@@ -96,11 +96,6 @@
 			*********** Begin scroll container *********** 
 			****************************************** -->
       <div id="scroll-container">
-        <!-- ===================
-				///// Begin header /////
-				========================
-				* Use class "tt-header-fixed" to set header to fixed position.
-				-->
         <header id="tt-header" class="tt-header-fixed">
           <div class="tt-header-inner">
             <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes can be found in the file "helper.css". -->
@@ -157,9 +152,7 @@
                       <ul class="tt-ol-menu-list">
                         <!-- <li><a href="">Single Link</a></li> -->
 
-                        <!-- Begin submenu (submenu master)
-												==================================== -->
-                        <li class="tt-ol-submenu-wrap">
+                        <li class="tt-ol-submenu-wrap active">
                           <div class="tt-ol-submenu-trigger">
                             <a href="index.html">Home</a>
                           </div>
@@ -169,20 +162,24 @@
                           <div class="tt-ol-submenu-trigger">
                             <a href="about-me.html">About</a>
                           </div>
-                         
                         </li>
-                        <!-- End submenu (sub-master) -->
-			
-			 <li class="tt-ol-submenu-wrap active">
+			      
+			                  <li class="tt-ol-submenu-wrap">
                           <div class="tt-ol-submenu-trigger">
-                            <a href="index.html"
+                            <a href="project.html"
                               >Projects</a>
-			  </div>
+                          </div>
                         </li>
 
-                        <li>
-                          <a href="contact.html">Contact</a>
+                        <li class="tt-ol-submenu-wrap">
+                          <div class="tt-ol-submenu-trigger">
+                            <a href="photography.html"
+                              >Photography</a>
+                          </div>
                         </li>
+
+
+                        <li><a href="contact.html">Contact</a></li>
                       </ul>
                       <!-- End menu list -->
                     </div>
